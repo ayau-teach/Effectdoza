@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Эффективті доза</title>
+<style>
+:root{--bg:#071321;--bg2:#102235;--c:#35D0C5;--s:#63B9FF;--g:#FFB45C;--t:#F4F8FC;--m:#A9BDCE}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:#030a12;color:var(--t);font-family:system-ui,"Segoe UI",Roboto,Arial,sans-serif;overflow:hidden}
+#st{position:absolute;left:50%;top:50%;width:min(100vw,177.78vh);aspect-ratio:16/9;transform:translate(-50%,-50%);background:radial-gradient(circle at 85% 10%,#14344f,var(--bg) 62%);overflow:hidden}
+.sl{position:absolute;inset:0;padding:3.6em 5em 4.6em;opacity:0;visibility:hidden;transform:translateX(3%);transition:.6s;display:flex;flex-direction:column;gap:1em}
+.sl.on{opacity:1;visibility:visible;transform:none}
+.tag{color:var(--c);letter-spacing:.2em;font-size:1em;text-transform:uppercase}
+h1{font-size:5em;line-height:1;letter-spacing:.02em}
+h2{font-size:2.5em;line-height:1.1}
+p,li{font-size:1.3em;line-height:1.45;color:var(--m)}
+b{color:var(--t)}
+.row{display:flex;gap:2.4em;flex:1;min-height:0;align-items:center}
+.col{flex:1;display:flex;flex-direction:column;gap:.8em;min-width:0}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(99,185,255,.28);border-radius:1em;padding:.9em 1.2em;backdrop-filter:blur(6px)}
+.card h3{font-size:1.4em;color:var(--c);margin-bottom:.2em}
+.card p{font-size:1.1em}
+.f{font-family:"Cambria Math","STIX Two Math",Georgia,serif;color:var(--g);white-space:nowrap}
+.f sub{font-size:.6em}
+.big{font-size:4.4em;text-align:center}
+.st{opacity:0;transform:translateY(1em);transition:.5s}.st.v{opacity:1;transform:none}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2em}.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.2em}
+.arr{color:var(--c);font-size:2.4em;align-self:center}
+table{border-collapse:collapse;width:100%;font-size:1.25em}
+td,th{padding:.5em .8em;text-align:left;border-bottom:1px solid rgba(99,185,255,.25)}
+th{color:var(--c);font-weight:600}td+td,th+th{text-align:right;color:var(--g);font-family:Georgia,serif}
+.dot{display:inline-block;width:.8em;height:.8em;border-radius:50%;margin-right:.6em}
+button{font:inherit;cursor:pointer;color:var(--t);background:rgba(53,208,197,.12);border:1px solid var(--c);border-radius:.6em;padding:.3em .9em;font-size:1.1em}
+button.on,button:hover{background:var(--c);color:var(--bg)}
+.ln{opacity:.3;transition:.4s}.ln.a{opacity:1}
+#nav{position:absolute;left:0;right:0;bottom:0;height:3.2em;display:flex;align-items:center;justify-content:space-between;padding:0 2em}
+#nav button{font-size:1.1em;padding:.2em .8em}
+#cn{color:var(--m);font-size:1.1em;letter-spacing:.15em}
+#pgw{position:absolute;left:0;right:0;bottom:0;height:.3em;background:rgba(255,255,255,.08)}#pg{height:100%;background:linear-gradient(90deg,var(--c),var(--s));transition:.5s}
+.thx{font-size:3em;color:var(--c)}
+</style></head><body>
+<div id="st">
+
+<section class="sl on" style="justify-content:center">
+<div class="row"><div class="col" style="flex:1.4"><div class="tag st">ICRP 103 · Радиациялық қорғаныс</div>
+<h1 class="st">ЭФФЕКТИВТІ<br><span style="color:var(--c)">ДОЗА</span></h1>
+<p class="st" style="font-size:1.6em">Иондаушы сәулеленудің адам ағзасына ықтимал биологиялық әсерін бағалау</p>
+<p class="st" style="color:var(--g)">Автор: Кәдірова Аяулым</p></div>
+<div class="col" style="align-items:center"><svg class="bodyfig" viewBox="-40 0 180 230" style="height:30em;max-height:100%"></svg></div></div>
+</section>
+
+<section class="sl"><div class="tag">02 · Кіріспе</div><h2>Иондаушы сәулелену және қауіпсіздік</h2>
+<div class="row"><div class="col">
+<div class="card st"><p><b>Ғылымдағы маңызы:</b> иондаушы сәулелену қазіргі ғылым мен техниканың негізгі объектілерінің бірі.</p></div>
+<div class="card st"><p><b>Қолданылуы:</b> медицинада, атом энергетикасында және өнеркәсіпте.</p></div>
+<div class="card st"><p><b>Биологиялық әсері:</b> адам ағзасында әртүрлі өзгерістер туындауы мүмкін.</p></div>
+<div class="card st"><p><b>Қажеттілік:</b> радиациялық қауіпсіздікті үнемі бақылау; эффективті доза – осының негізгі шамасы.</p></div></div>
+<div class="col"><svg viewBox="0 0 400 300" class="st"><g stroke="#63B9FF" stroke-width="1.5" fill="none"><path d="M200 150L200 50M200 150L70 230M200 150L330 230" stroke-dasharray="5 5"/></g>
+<g fill="#102235" stroke="#35D0C5" stroke-width="2"><circle cx="200" cy="50" r="38"/><circle cx="70" cy="230" r="38"/><circle cx="330" cy="230" r="38"/></g>
+<circle cx="200" cy="150" r="34" fill="rgba(255,180,92,.15)" stroke="#FFB45C" stroke-width="2"/>
+<g fill="#F4F8FC" font-size="13" text-anchor="middle"><text x="200" y="54">Медицина</text><text x="70" y="226">Атом</text><text x="70" y="241">энергетикасы</text><text x="330" y="234">Өнеркәсіп</text></g>
+<text x="200" y="146" fill="#FFB45C" font-size="14" text-anchor="middle">Эффек-</text><text x="200" y="162" fill="#FFB45C" font-size="14" text-anchor="middle">тивті доза</text></svg></div></div></section>
+
+<section class="sl"><div class="tag">03 · Түсінік</div><h2>Эффективті доза дегеніміз не?</h2>
+<div class="row"><div class="col"><p><b>Эффективті доза</b> – иондаушы сәулеленудің адам ағзасына тигізетін <b>жалпы ықтимал биологиялық зиянын</b> сипаттайтын физикалық шама (ICRP ұсынымдары).</p>
+<p>Мүшелердің сезімталдығы бірдей емес: сүйек кемігі, өкпе, асқазан, сүт бездері сезімтал. Сондықтан бірдей доза әртүрлі мүшеде әртүрлі қауіп тудырады.</p>
+<p>Ол әртүрлі сәулелену түрлері мен дененің әртүрлі бөліктеріне түскен дозалардың қаупін <b>бір шамамен салыстыруға</b> мүмкіндік береді.</p></div>
+<div class="col"><div class="card st"><h3>Сәулелену түрі</h3><p>wR – биологиялық әсер ерекшелігі</p></div><div class="f arr" style="text-align:center">+</div>
+<div class="card st"><h3>Ұлпа сезімталдығы</h3><p>wT – мүшенің үлесі</p></div><div class="arr" style="text-align:center">↓</div>
+<div class="card st" style="border-color:var(--g)"><h3 style="color:var(--g)">Эффективті доза E</h3><p>Жалпы радиациялық қауіп, Sv</p></div></div></div></section>
+
+<section class="sl"><div class="tag">04 · Дозиметриялық шамалар</div><h2>Үш шаманы салыстыру</h2>
+<div class="g3" style="flex:1;align-items:center">
+<div class="card st"><h3>1. Жұтылған доза</h3><div class="f" style="font-size:2.2em">D = dε / dm</div><p>Ұлпаның бірлік массасына берілген энергия. Бірлігі: <b>грей (Gy)</b>.</p></div>
+<div class="card st"><h3>2. Эквивалентті доза</h3><div class="f" style="font-size:2.2em">H<sub>T</sub> = Σ<sub>R</sub> w<sub>R</sub>·D<sub>T,R</sub></div><p>Сәулелену түрінің әсері ескерілген. Бірлігі: <b>зиверт (Sv)</b>.</p></div>
+<div class="card st"><h3>3. Эффективті доза</h3><div class="f" style="font-size:2.2em">E = Σ<sub>T</sub> w<sub>T</sub>·H<sub>T</sub></div><p>Ұлпалар сезімталдығы ескерілген жалпы көрсеткіш. Бірлігі: <b>зиверт (Sv)</b>.</p></div></div>
+<svg viewBox="0 0 800 40" class="st"><g fill="#35D0C5" font-size="15" text-anchor="middle"><text x="130" y="25">Жұтылған энергия</text><text x="400" y="25">→ Сәулелену түрінің әсері (wR) →</text><text x="680" y="25">Ұлпа сезімталдығы (wT)</text></g></svg></section>
+
+<section class="sl"><div class="tag">05 · Негізгі формула</div>
+<div class="big f st" style="margin-top:.4em">E = <span style="color:var(--c)">Σ<sub>T</sub> w<sub>T</sub></span> · <span style="color:var(--s)">H<sub>T</sub></span></div>
+<div class="f st" style="font-size:2.4em;text-align:center">E = <span style="color:var(--c)">Σ<sub>T</sub> w<sub>T</sub></span> · <span style="color:#FF7A8A">Σ<sub>R</sub> w<sub>R</sub></span> · <span style="color:#F4F8FC">D<sub>T,R</sub></span></div>
+<div class="g3" style="margin-top:.6em">
+<div class="card st"><p><span class="f">E</span> – эффективті доза</p></div><div class="card st"><p><span class="f" style="color:var(--c)">w<sub>T</sub></span> – ұлпалық салмақ коэффициенті</p></div><div class="card st"><p><span class="f" style="color:var(--s)">H<sub>T</sub></span> – эквивалентті доза</p></div>
+<div class="card st"><p><span class="f" style="color:#FF7A8A">w<sub>R</sub></span> – радиациялық салмақ коэффициенті</p></div><div class="card st"><p><span class="f">D<sub>T,R</sub></span> – жұтылған доза</p></div><div class="card st"><p>Σ – барлық ұлпалар (T) және сәулелену түрлері (R) бойынша қосынды</p></div></div></section>
+
+<section class="sl"><div class="tag">06 · wR</div><h2>Радиациялық салмақ коэффициенті</h2>
+<div class="row"><div class="col"><table><tr><th>Сәулелену түрі</th><th>w<sub>R</sub></th></tr><tr><td>Альфа-бөлшектер</td><td>20</td></tr><tr><td>Бета-бөлшектер</td><td>1</td></tr><tr><td>Гамма-сәулелер</td><td>1</td></tr><tr><td>Рентген сәулелері</td><td>1</td></tr><tr><td>Нейтрондар</td><td>энергияға тәуелді</td></tr></table>
+<p style="font-size:1em">Нейтрондар үшін wR сәуленің энергиясына байланысты өзгереді.</p></div>
+<div class="col"><svg viewBox="0 0 400 200"><circle cx="28" cy="100" r="18" fill="rgba(255,180,92,.2)" stroke="#FFB45C"/><text x="28" y="106" fill="#FFB45C" font-size="16" text-anchor="middle">☢</text>
+<g class="ln" id="l0"><line x1="48" y1="45" x2="108" y2="45" stroke="#FFB45C" stroke-width="3"/><rect x="110" y="30" width="4" height="30" fill="#F4F8FC"/><text x="125" y="49" fill="#FFB45C" font-size="13">α · қағаз</text></g>
+<g class="ln" id="l1"><line x1="48" y1="100" x2="198" y2="100" stroke="#63B9FF" stroke-width="3"/><rect x="200" y="82" width="8" height="36" fill="#A9BDCE"/><text x="218" y="104" fill="#63B9FF" font-size="13">β · алюминий</text></g>
+<g class="ln" id="l2"><line x1="48" y1="155" x2="298" y2="155" stroke="#35D0C5" stroke-width="3"/><rect x="300" y="132" width="16" height="46" fill="#6b7a8a"/><line x1="316" y1="155" x2="390" y2="155" stroke="#35D0C5" stroke-dasharray="3 6"/><text x="150" y="178" fill="#35D0C5" font-size="13">γ / X · қорғасын</text></g></svg>
+<div style="display:flex;gap:.6em"><button data-k="0">α</button><button data-k="1">β</button><button data-k="2">γ / X</button></div><p id="inf" style="min-height:5em">Сәулелену түрін таңдаңыз.</p></div></div></section>
+
+<section class="sl"><div class="tag">07 · wT · ICRP Publication 103</div><h2>Ұлпалық салмақ коэффициенті</h2>
+<div class="row"><div class="col" style="align-items:center;flex:.7"><svg class="bodyfig" viewBox="-40 0 180 230" style="height:26em"></svg></div>
+<div class="col" style="flex:1.5"><table>
+<tr><th>Мүше немесе ұлпа</th><th>w<sub>T</sub></th></tr>
+<tr class="st"><td><span class="dot" style="background:#FFB45C"></span>Қызыл сүйек кемігі, тоқ ішек, өкпе, асқазан, сүт бездері, қалған ұлпалар</td><td>0,12 (әрқайсысы)</td></tr>
+<tr class="st"><td><span class="dot" style="background:#FF7A8A"></span>Жыныс бездері</td><td>0,08</td></tr>
+<tr class="st"><td><span class="dot" style="background:#35D0C5"></span>Қуық, өңеш, бауыр, қалқанша без</td><td>0,04 (әрқайсысы)</td></tr>
+<tr class="st"><td><span class="dot" style="background:#63B9FF"></span>Сүйек беті, ми, сілекей бездері, тері</td><td>0,01 (әрқайсысы)</td></tr>
+<tr class="st"><td><b>Барлық коэффициенттердің қосындысы</b></td><td style="color:var(--t)">Σ w<sub>T</sub> = 1</td></tr></table></div></div></section>
+
+<section class="sl"><div class="tag">08 · Есептеу</div><h2>Эффективті дозаны есептеу мысалы</h2>
+<div class="g3"><div class="card st"><p>Өкпе: H<sub>T</sub> = 2 мЗв, w<sub>T</sub> = 0,12</p></div><div class="card st"><p>Қалқанша без: H<sub>T</sub> = 1 мЗв, w<sub>T</sub> = 0,04</p></div><div class="card st"><p>Тері: H<sub>T</sub> = 3 мЗв, w<sub>T</sub> = 0,01</p></div></div>
+<div class="f st" style="font-size:2.2em;margin-top:.3em">E = Σ w<sub>T</sub> · H<sub>T</sub></div>
+<div class="f st" style="font-size:2.2em">E = 0,12 × 2 + 0,04 × 1 + 0,01 × 3</div>
+<div class="f st" style="font-size:2.2em">E = 0,24 + 0,04 + 0,03</div>
+<div class="card st" style="border-color:var(--g);align-self:flex-start"><div class="f" style="font-size:3em">E = 0,31 мЗв</div></div>
+<p class="st" style="font-size:1em">Ескерту: бұл тек үш мүшенің үлесін есептейтін оқу мысалы, толық денелік доза емес.</p></section>
+
+<section class="sl"><div class="tag">09 · Өлшем бірлігі</div><h2>Зиверт (Sv)</h2>
+<div class="row"><div class="col"><p>Эффективті доза мен эквивалентті дозаның SI бірлігі – <b>зиверт</b>.</p>
+<div class="f st" style="font-size:1.8em;line-height:1.6">1 Sv = 1000 mSv<br>1 mSv = 1000 μSv<br>1 Sv = 1 000 000 μSv</div>
+<p><b>Грей (Gy)</b> – жұтылған энергия (Дж/кг), <b>зиверт (Sv)</b> – сәулелену түрі мен ұлпа сезімталдығы ескерілген биологиялық қауіп көрсеткіші.</p></div>
+<div class="col" style="align-items:center"><svg viewBox="0 0 300 200" style="width:90%"><rect x="40" y="10" width="220" height="180" rx="22" fill="#102235" stroke="#63B9FF" stroke-width="2"/><rect x="60" y="30" width="180" height="70" rx="8" fill="#071321" stroke="#35D0C5"/><foreignObject x="60" y="30" width="180" height="70"><div xmlns="http://www.w3.org/1999/xhtml" style="color:#FFB45C;font:bold 26px Georgia;text-align:center;padding-top:14px"><span class="cnt" data-to="310">0</span> μSv</div></foreignObject>
+<text x="150" y="130" fill="#A9BDCE" font-size="13" text-anchor="middle">= 0,31 mSv (мысал, 8-слайд)</text><circle cx="150" cy="160" r="12" fill="none" stroke="#35D0C5"/></svg></div></div></section>
+
+<section class="sl"><div class="tag">10 · Қолданылу салалары</div><h2>Эффективті доза қайда қолданылады?</h2>
+<div class="g2" style="flex:1">
+<div class="card st"><h3>＋ Медицина</h3><p>Рентген, КТ және ядролық медицина процедураларының сәулелену деңгейлерін салыстыру.</p></div>
+<div class="card st"><h3>⚛ Атом энергетикасы</h3><p>АЭС қызметкерлерінің радиациялық әсерін бақылау, қауіпсіздікті ұйымдастыру.</p></div>
+<div class="card st"><h3>⚙ Өнеркәсіп</h3><p>Радиоактивті материалдармен жұмыс, радиографиялық бақылау кезінде сәулелену деңгейін бағалау.</p></div>
+<div class="card st"><h3>❦ Экология және ғылым</h3><p>Қоршаған ортадағы радиоактивті заттардың әсерін, радиациялық фонды және қорғаныс әдістерін зерттеу.</p></div></div></section>
+
+<section class="sl"><div class="tag">11 · Радиациялық қорғаныс</div><h2>Қорғаныс қағидалары және шектеулер</h2>
+<div class="row"><div class="col"><div class="g2">
+<div class="card st"><h3>◷ Уақыт</h3><p>Көзбен жұмыс уақытын қысқарту.</p></div>
+<div class="card st"><h3>↔ Қашықтық</h3><p>Көзден арақашықтықты арттыру.</p></div>
+<div class="card st"><h3>▣ Экран</h3><p>Сәулелену түріне сай қорғаныш материалдары.</p></div>
+<div class="card st"><h3>▤ Дозиметрия</h3><p>Жеке дозиметрлермен бақылау.</p></div></div></div>
+<div class="col"><div class="card st" style="border-color:var(--g)"><h3 style="color:var(--g)">Шектеулер</h3>
+<ul style="padding-left:1.2em"><li>Жеке адамның нақты қатерлі ісікке шалдығу ықтималдығын дәл есептемейді.</li><li>Жеке медициналық тәуекелге мүшелердің нақты дозалары, жасы, жынысы және басқа факторлар ескеріледі.</li><li>Тіндік реакцияларды бағалауда басқа дозиметриялық шамалар қажет болуы мүмкін.</li></ul></div></div></div></section>
+
+<section class="sl"><div class="tag">12 · Қорытынды</div><h2>Негізгі тұжырымдар</h2>
+<div class="row"><div class="col"><ul style="padding-left:1.2em"><li>Эффективті доза – радиациялық қорғаныстың маңызды шамасы.</li><li>Сәулелену түрі мен ұлпа сезімталдығын ескереді.</li><li>Зивертпен өлшенеді.</li><li>Медицинада, өндірісте және ғылыми зерттеулерде қолданылады.</li></ul>
+<div class="thx st" style="margin-top:.6em">Назарларыңызға рақмет!</div></div>
+<div class="col"><div class="card"><h3>Әдебиеттер</h3><p style="font-size:.95em">1. ICRP Publication 103 (2007).<br>2. ICRP Publication 147 (2021).<br>3. WHO – Ionizing Radiation and Health Effects.<br>4. IAEA – International Basic Safety Standards (2014).</p></div></div></div></section>
+
+<div id="nav"><button id="pv" aria-label="Алдыңғы">←</button><span id="cn">01/12</span><span><button id="fs" aria-label="Fullscreen">⛶</button> <button id="nx" aria-label="Келесі">→</button></span></div>
+<div id="pgw"><div id="pg"></div></div>
+</div>
+<script>
+const st=document.getElementById('st'),S=[...document.querySelectorAll('.sl')],N=S.length,cn=document.getElementById('cn'),pg=document.getElementById('pg');let i=0,tm=[];
+const O=[[50,20,6,'b'],[50,46,3.5,'c'],[50,54,2.5,'c'],[42,66,7,'a'],[58,66,7,'a'],[50,80,3.5,'a'],[41,92,6,'c'],[58,90,6,'a'],[50,108,7,'a'],[50,120,4,'c'],[50,130,4,'d']],C={a:'#FFB45C',b:'#63B9FF',c:'#35D0C5',d:'#FF7A8A'};
+document.querySelectorAll('.bodyfig').forEach(e=>{e.innerHTML='<g fill="rgba(99,185,255,.08)" stroke="#63B9FF" stroke-width="1.2"><circle cx="50" cy="22" r="15"/><path d="M34 44h32q12 2 13 16l4 52h-8l-4-38h-3v52l6 84H61l-8-76h-6l-8 76H32l6-84V74h-3l-4 38h-8l4-52q1-14 13-16z"/></g>'+O.map(o=>`<circle cx="${o[0]}" cy="${o[1]}" r="${o[2]}" fill="${C[o[3]]}" opacity=".85"/>`).join('')+'<circle cx="50" cy="115" r="75" fill="none" stroke="#35D0C5" stroke-opacity=".25" stroke-dasharray="3 6"/>'});
+function fit(){st.style.fontSize=st.offsetWidth/100+'px'}addEventListener('resize',fit);fit();
+function go(n){if(n<0||n>=N)return;S[i].classList.remove('on');i=n;const s=S[i];s.classList.add('on');tm.forEach(clearTimeout);tm=[];
+s.querySelectorAll('.st').forEach(e=>e.classList.remove('v'));
+s.querySelectorAll('.st').forEach((e,k)=>tm.push(setTimeout(()=>e.classList.add('v'),300+k*380)));
+s.querySelectorAll('.cnt').forEach(c=>{const t=+c.dataset.to,a=performance.now();(function f(n){const p=Math.min((n-a)/1800,1);c.textContent=Math.round(t*p);if(p<1)requestAnimationFrame(f)})(a)});
+cn.textContent=String(i+1).padStart(2,'0')+'/'+N;pg.style.width=(i+1)/N*100+'%'}
+const nx=()=>go(i+1),pv=()=>go(i-1);
+document.getElementById('nx').onclick=nx;document.getElementById('pv').onclick=pv;
+const fs=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();
+document.getElementById('fs').onclick=fs;
+addEventListener('keydown',e=>{if(e.key=='ArrowRight'||e.key==' '){e.preventDefault();nx()}else if(e.key=='ArrowLeft')pv();else if(e.key=='f'||e.key=='F')fs()});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)d<0?nx():pv();x0=null},{passive:true});
+const T=['Альфа-бөлшектер (wR = 20): ауыр, зарядты, затта өте қысқа жол жүреді; қағаз парағы тоқтатады. Ағза ішіне түссе, тығыз иондау себепті қауіпті.','Бета-бөлшектер, электрондар (wR = 1): өтімділігі орташа; жұқа алюминий парағы тоқтатады.','Гамма және рентген сәулелері (wR = 1): өтімділігі жоғары фотондар; әлсірету үшін қорғасын немесе қалың бетон қажет.'];
+document.querySelectorAll('button[data-k]').forEach(b=>b.onclick=()=>{const k=+b.dataset.k;document.querySelectorAll('button[data-k]').forEach(x=>x.classList.toggle('on',x===b));[0,1,2].forEach(j=>document.getElementById('l'+j).classList.toggle('a',j==k));document.getElementById('inf').textContent=T[k]});
+go(0);
+</script></body></html>
